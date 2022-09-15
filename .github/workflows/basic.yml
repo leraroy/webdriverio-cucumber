@@ -28,10 +28,13 @@ jobs:
       - name: Tests
         run: npm run test
         
-  allure-report:
-    runs-on: windows-latest
-    needs: [my-testing]
-    
-    steps:
       - name: Report generate
         run: npm run report:generate
+        
+  #allure-report:
+   # runs-on: windows-latest
+    #needs: [my-testing]
+    
+    #steps:
+     # - name: Report generate
+      #  run: npm run report:generate
