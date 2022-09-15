@@ -31,14 +31,17 @@ jobs:
       - name: Install allure
         run: npm install -g allure-commandline --save-dev
         
-      - name: Create Report
-        if: always()
-        run: npm run report:generate
-      - uses: actions/upload-artifact@v1
-        if: always()
-        with:
-           name: allure-report
-           path: ./allure-report
+     # - name: Create Report
+      - name: Allure Report with history
+        uses: simple-elf/allure-report-action@v1.6
+
+      #  if: always()
+       # run: npm run report:generate
+      #- uses: actions/upload-artifact@v1
+       # if: always()
+        #with:
+         #  name: allure-report
+          # path: ./allure-report
       
         
         
