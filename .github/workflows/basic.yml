@@ -28,6 +28,9 @@ jobs:
       - name: Tests
         run: npm run test
         
+      - name: Install allure
+        run: npm install -g allure-commandline --save-dev
+        
       - name: Create Report
         if: always()
         run: npm run report:generate
