@@ -34,4 +34,4 @@ jobs:
     
     steps:
       - name: Report generate
-        run: allure generate allure-results/ --clean && allure open
+        run: npm run report:generate
