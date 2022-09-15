@@ -1,0 +1,29 @@
+{
+  "name": "demo-orangehr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio run ./wdio.conf.js",
+    "report:generate": "allure generate allure-results/ --clean && allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.22.0",
+    "cucumberjs-allure-reporter": "^1.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/register": "^7.18.9",
+    "@wdio/allure-reporter": "^7.21.0",
+    "@wdio/cucumber-framework": "^7.21.0",
+    "@wdio/local-runner": "^7.22.0",
+    "@wdio/spec-reporter": "^7.21.0",
+    "chromedriver": "^104.0.0",
+    "wdio-chromedriver-service": "^7.3.2"
+  }
+}

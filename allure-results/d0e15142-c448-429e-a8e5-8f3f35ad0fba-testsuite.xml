@@ -1,0 +1,109 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661101523933' stop='1661101534537'>
+    <name>Login to the site</name>
+    <title>Login to the site</title>
+    <test-cases>
+        <test-case start='1661101523957' status='passed' stop='1661101532358'>
+            <name>Login to the site with invalid credentials</name>
+            <title>Login to the site with invalid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661101532358' status='broken' stop='1661101532362'>
+            <name>Login to the site as admin credentials</name>
+            <title>Login to the site as admin credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I login with Admin and admin123" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I login with Admin and admin123" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\TestWebdriverIO\demo-orangehr\features\login.feature):1:1
+                	at Scenario(Login to the site as admin credentials):9:3
+                	at Step(I login with &lt;username> and &lt;password>):12:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1661101532911' status='broken' stop='1661101532915'>
+            <name>Login to the site with empty credentials</name>
+            <title>Login to the site with empty credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I logins with  and admin123" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I logins with  and admin123" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\TestWebdriverIO\demo-orangehr\features\login.feature):1:1
+                	at Scenario(Login to the site with empty credentials):19:3
+                	at Step(I logins with &lt;username> and &lt;password>):22:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1661101533441' status='broken' stop='1661101533447'>
+            <name>Login to the site with empty credentials</name>
+            <title>Login to the site with empty credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I logins with Admin and " is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I logins with Admin and " is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\TestWebdriverIO\demo-orangehr\features\login.feature):1:1
+                	at Scenario(Login to the site with empty credentials):19:3
+                	at Step(I logins with &lt;username> and &lt;password>):22:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1661101534004' status='broken' stop='1661101534008'>
+            <name>Login to the site with empty credentials</name>
+            <title>Login to the site with empty credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I logins with  and " is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I logins with  and " is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\TestWebdriverIO\demo-orangehr\features\login.feature):1:1
+                	at Scenario(Login to the site with empty credentials):19:3
+                	at Step(I logins with &lt;username> and &lt;password>):22:5
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
