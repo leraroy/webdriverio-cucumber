@@ -21,10 +21,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Print Hello Message in Testing
-        run: echo Hello, world!
+      - name: Tests
+        run: npx wdio run ./wdio.conf.js
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Report generate
+        run: allure generate allure-results/ --clean && allure open
