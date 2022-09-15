@@ -27,6 +27,11 @@ jobs:
 
       - name: Tests
         run: npm run test
-
-      #- name: Report generate
-        #run: allure generate allure-results/ --clean && allure open
+        
+  allure-report:
+    runs-on: windows-latest
+    needs: [my-testing]
+    
+    steps:
+      - name: Report generate
+        run: allure generate allure-results/ --clean && allure open
