@@ -31,13 +31,10 @@ jobs:
       - name: Install allure
         run: npm install -g allure-commandline --save-dev
         
-      - name: Allure Report with history
-        uses: simple-elf/allure-report-action@v1.6
-        
-  allure:
-    name: Generate Allure Report
-    runs-on: ubuntu-latest
-    steps:
+      #- name: Allure Report with history
+       # uses: simple-elf/allure-report-action@v1.6
+
+      - name: Generate Allure Repor
       - uses: actions/checkout@v2
 
       - name: Get Allure history
