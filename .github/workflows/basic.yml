@@ -22,8 +22,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Tests
-        run: echo Hello world
-        #npx wdio run ./wdio.conf.js
+        run: npm run test
 
       #- name: Report generate
         #run: allure generate allure-results/ --clean && allure open
