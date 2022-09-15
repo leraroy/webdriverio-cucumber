@@ -30,7 +30,7 @@ jobs:
         
       - name: Create Report
         if: always()
-        run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run report:generate
+        run: npm run report:generate
       - uses: actions/upload-artifact@v1
         if: always()
         with:
