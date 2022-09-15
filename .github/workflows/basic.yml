@@ -16,12 +16,12 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  my-testing:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Print Hello Message
+      - name: Print Hello Message in Testing
         run: echo Hello, world!
 
       - name: Run a multi-line script
