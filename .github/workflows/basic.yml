@@ -32,7 +32,7 @@ jobs:
         run: npm install @wdio/allure-reporter --save-dev
         
       - name: Report generate
-        run: npm run report:generate
+        run: npm i allure-commandline
         
   #allure-report:
    # runs-on: windows-latest
