@@ -38,6 +38,7 @@ jobs:
        # run: npx allure open ./allure-report
   
   allure:
+    needs: my-testing
     name: Generate Allure Report
     runs-on: ubuntu-latest
     steps:
