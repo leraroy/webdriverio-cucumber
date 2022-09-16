@@ -37,11 +37,11 @@ jobs:
       #- name: Open report
        # run: npx allure open ./allure-report
   
-  allure:
-    needs: my-testing
-    name: Generate Allure Report
-    runs-on: ubuntu-latest
-    steps:
+  #allure:
+   # needs: my-testing
+    #name: Generate Allure Report
+    #runs-on: ubuntu-latest
+    #steps:
       - uses: actions/checkout@v2
 
       - name: Get Allure history
