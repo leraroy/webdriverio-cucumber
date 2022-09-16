@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661103047058' stop='1661103059533'>
+    <name>Login to the site</name>
+    <title>Login to the site</title>
+    <test-cases>
+        <test-case start='1661103047089' status='passed' stop='1661103056966'>
+            <name>Login to the site with invalid credentials</name>
+            <title>Login to the site with invalid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661103056967' status='broken' stop='1661103059309'>
+            <name>Login to the site as admin credentials</name>
+            <title>Login to the site as admin credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TypeError: Cannot read properties of undefined (reading 'urlAfterLogin')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'urlAfterLogin')
+                    at World.&lt;anonymous> (D:\TestWebdriverIO\demo-orangehr\features\step-definitions\/login.steps.js:35:41)
+                    at World.executeAsync (D:\TestWebdriverIO\demo-orangehr\node_modules\@wdio\utils\build\shim.js:333:27)
+                    at World.testFrameworkFnWrapper (D:\TestWebdriverIO\demo-orangehr\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at wrapPromiseWithTimeout (D:\TestWebdriverIO\demo-orangehr\node_modules\@cucumber\cucumber\src\time.ts:56:10)
+                    at Object.run (D:\TestWebdriverIO\demo-orangehr\node_modules\@cucumber\cucumber\src\user_code_runner.ts:86:16)
+                    at Object.run (D:\TestWebdriverIO\demo-orangehr\node_modules\@cucumber\cucumber\src\runtime\step_runner.ts:50:20)
+                    at TestCaseRunner.invokeStep (D:\TestWebdriverIO\demo-orangehr\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:130:12)
+                    at TestCaseRunner.runStep (D:\TestWebdriverIO\demo-orangehr\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:312:20)
+                    at D:\TestWebdriverIO\demo-orangehr\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:214:36</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
