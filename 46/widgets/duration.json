@@ -1,0 +1,1 @@
+[{"uid":"c475488e713aa946","name":"Login to the site as admin credentials","time":{"start":1663334009921,"stop":1663334012309,"duration":2388},"status":"passed","severity":"normal"},{"uid":"9661ece8eb5f395b","name":"Login to the site with invalid credentials","time":{"start":1663334002462,"stop":1663334009921,"duration":7459},"status":"passed","severity":"normal"}]
