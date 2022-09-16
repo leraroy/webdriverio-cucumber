@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Sep 16 16:13:29 EEST 2022","Fri Sep 16 16:13:32 EEST 2022","2388","","Login to the site","","Login to the site","Login to the site as admin credentials","Login to the site as admin credentials",""
 "passed","Fri Sep 16 16:13:22 EEST 2022","Fri Sep 16 16:13:29 EEST 2022","7459","","Login to the site","","Login to the site","Login to the site with invalid credentials","Login to the site with invalid credentials",""
+"passed","Fri Sep 16 16:13:29 EEST 2022","Fri Sep 16 16:13:32 EEST 2022","2388","","Login to the site","","Login to the site","Login to the site as admin credentials","Login to the site as admin credentials",""
