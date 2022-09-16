@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663334002446' stop='1663334012310'>
+    <name>Login to the site</name>
+    <title>Login to the site</title>
+    <test-cases>
+        <test-case start='1663334002462' status='passed' stop='1663334009921'>
+            <name>Login to the site with invalid credentials</name>
+            <title>Login to the site with invalid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1663334004740' status='passed' stop='1663334009781'>
+                    <name>Then I should see a flash message saying "Invalid credentials"</name>
+                    <title>Then I should see a flash message saying "Invalid credentials"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1663334009743' status='passed' stop='1663334009762'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='41649059-445e-446b-84f7-4cbefdaf2ab1-attachment.json' type='application/json' size='62'/>
+                                <attachment title='Response' source='1d93cbc8-0396-4c8c-8641-3b339195e9de-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1663334009764' status='passed' stop='1663334009779'>
+                            <name>GET /session/:sessionId/element/a9ffa883-8141-4064-99ca-7b18dff31ba7/text</name>
+                            <title>GET /session/:sessionId/element/a9ffa883-8141-4064-99ca-7b18dff31ba7/text</title>
+                            <attachments>
+                                <attachment title='Response' source='2d8ab4f3-e759-4714-a04f-cd6e700eb355-attachment.json' type='application/json' size='21'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1663334009921' status='passed' stop='1663334012309'>
+            <name>Login to the site as admin credentials</name>
+            <title>Login to the site as admin credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1663334010499' status='passed' stop='1663334011892'>
+                    <name>Then I should see right url</name>
+                    <title>Then I should see right url</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1663334010500' status='passed' stop='1663334011890'>
+                            <name>GET /session/:sessionId/url</name>
+                            <title>GET /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Response' source='8fe7e841-05f2-4066-9d07-9fd679c9f5ad-attachment.json' type='application/json' size='78'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
