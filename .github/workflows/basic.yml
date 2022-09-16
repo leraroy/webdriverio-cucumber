@@ -28,11 +28,11 @@ jobs:
       - name: Tests
         run: npm run test
         
-      - name: Install allure
-        run: npm install -g allure-commandline --save-dev
+      #- name: Install allure
+       # run: npm install -g allure-commandline --save-dev
         
-      - name: Reports Generate
-        run: npx allure generate ./allure-results --clean
+      #- name: Reports Generate
+       # run: npx allure generate ./allure-results --clean
         
       #- name: Open report
        # run: npx allure open ./allure-report
