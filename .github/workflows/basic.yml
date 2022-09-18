@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches: [ master, main ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ master, main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,7 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   my-testing:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
     steps:
       - uses: actions/checkout@v3
@@ -28,20 +28,25 @@ jobs:
       - name: Tests
         run: npm run test
         
-      #- name: Install allure
-       # run: npm install -g allure-commandline --save-dev
+      - name: Cucumber
+        run: npm install @wdio/cucumber-framework --save-dev
         
-      #- name: Reports Generate
-       # run: npx allure generate ./allure-results --clean
+      - name: Install allure
+        run: npm install -g allure-commandline --save-dev
         
-      #- name: Open report
-       # run: npx allure open ./allure-report
+      - name: Reports Generate
+        run: npx allure generate ./allure-results --clean
+        
+      - uses: actions/upload-artifact@master
+        with:
+          name: allure-results
+          path: allure-results
+          retention-days: 20
   
   allure:
     needs: my-testing
     name: Generate Allure Report
     runs-on: ubuntu-latest
-    
     steps:
       - uses: actions/checkout@v2
 
@@ -60,8 +65,8 @@ jobs:
         with:
           allure_results: allure-results
           #gh_pages: gh-pages
-          allure_report: allure-report
-          #allure_history: allure-history
+          #allure_report: allure-report
+          allure_history: allure-history
           keep_reports: 20
 
       - name: Deploy report to Github Pages
@@ -70,8 +75,7 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-results
-    
+          PUBLISH_DIR: allure-history
         
         
         
