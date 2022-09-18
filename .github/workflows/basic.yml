@@ -34,8 +34,11 @@ jobs:
       - name: Reports Generate
         run: npx allure generate ./allure-results --clean
         
-      #- name: Open report
-       # run: npx allure open ./allure-report
+      - uses: actions/upload-artifact@master
+        with:
+          name: allure-results
+          path: allure-results
+          retention-days: 20
   
   allure:
     needs: my-testing
