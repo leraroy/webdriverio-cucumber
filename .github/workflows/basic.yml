@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches: [ "master", "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,7 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   my-testing:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
     steps:
       - uses: actions/checkout@v3
@@ -27,6 +27,9 @@ jobs:
 
       - name: Tests
         run: npm run test
+        
+      - name: Cucumber
+        run: npm install @wdio/cucumber-framework --save-dev
         
       - name: Install allure
         run: npm install -g allure-commandline --save-dev
